@@ -20,13 +20,13 @@
     "imageFolder": "/images/baguio"
   },
   {
-    "slug": "on-the-sunny-side",
-    "title": "\"On the Sunny Side of the Street\"",
-    "year": "2024",
-    "description": "Golden hour 35mm work.",
-    "cover": "/images/on-the-sunny-side/cover.svg",
-    "youtubeId": "VIDEO_ID_HERE",
-    "imageFolder": "/images/on-the-sunny-side"
+    "slug": "mariglem",
+    "title": "mariglem",
+    "year": "2026",
+    "description": "init",
+    "cover": "/images/mariglem/000009120030.jpg",
+    "youtubeId": "_qjDlhZooKM",
+    "imageFolder": "/images/mariglem"
   },
   {
     "slug": "monochrome",
