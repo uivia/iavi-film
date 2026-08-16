@@ -7,22 +7,7 @@
     "roll": "Kodak Ultramax 400",
     "cover": "/images/marinduque/000047100035.jpg",
     "youtubeId": "1ric3yCCe6c",
-    "images": [
-      "/images/marinduque/000047100010.jpg",
-      "/images/marinduque/000047100019.jpg",
-      "/images/marinduque/000047100021.jpg",
-      "/images/marinduque/000047100022.jpg",
-      "/images/marinduque/000047100025.jpg",
-      "/images/marinduque/000047100026.jpg",
-      "/images/marinduque/000047100027.jpg",
-      "/images/marinduque/000047100028.jpg",
-      "/images/marinduque/000047100029.jpg",
-      "/images/marinduque/000047100030.jpg",
-      "/images/marinduque/000047100035.jpg",
-      "/images/marinduque/000047100036.jpg",
-      "/images/marinduque/000047100037.jpg",
-      "/images/marinduque/000047100038.jpg"
-    ]
+    "imageFolder": "/images/marinduque"
   },
   {
     "slug": "the-morro",
@@ -32,11 +17,7 @@
     "roll": "Kodak Ultramax 400",
     "cover": "/images/the-morro/cover.svg",
     "youtubeId": "VIDEO_ID_HERE",
-    "images": [
-      "/images/the-morro/cover.svg",
-      "/images/the-morro/IMG_2.svg",
-      "/images/the-morro/IMG_3.svg"
-    ]
+    "imageFolder": "/images/baguio"
   },
   {
     "slug": "on-the-sunny-side",
@@ -45,11 +26,7 @@
     "description": "Golden hour 35mm work.",
     "cover": "/images/on-the-sunny-side/cover.svg",
     "youtubeId": "VIDEO_ID_HERE",
-    "images": [
-      "/images/on-the-sunny-side/cover.svg",
-      "/images/on-the-sunny-side/IMG_2.svg",
-      "/images/on-the-sunny-side/IMG_3.svg"
-    ]
+    "imageFolder": "/images/on-the-sunny-side"
   },
   {
     "slug": "monochrome",
@@ -58,10 +35,6 @@
     "description": "Black and white 120 film studies.",
     "cover": "/images/monochrome/cover.svg",
     "youtubeId": "VIDEO_ID_HERE",
-    "images": [
-      "/images/monochrome/cover.svg",
-      "/images/monochrome/IMG_2.svg",
-      "/images/monochrome/IMG_3.svg"
-    ]
+    "imageFolder": "/images/monochrome"
   }
 ]

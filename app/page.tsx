@@ -2,7 +2,7 @@ import { HERO_IMAGE, SITE, getAlbums } from "@/lib/albums";
 
 export default function HomePage() {
   const albums = getAlbums();
-  const hero = albums[0] ?? { cover: HERO_IMAGE };
+  const hero = albums[1] ?? { cover: HERO_IMAGE };
 
   return (
     <div className="mx-auto max-w-5xl px-6 pb-24 pt-28">

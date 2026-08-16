@@ -22,5 +22,5 @@ export default async function AlbumPage({ params }: Props) {
   const { slug } = await params;
   const album = getAlbum(slug);
   if (!album) notFound();
-  return <Slideshow slug={slug} />;
+  return <Slideshow album={album} />;
 }

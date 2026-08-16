@@ -1,4 +1,6 @@
 import albumsData from "@/data/albums.json";
+import fs from "node:fs";
+import path from "node:path";
 
 export type PhotoWork = {
   slug: string;
@@ -8,6 +10,7 @@ export type PhotoWork = {
   roll: string;
   cover: string;
   images: string[];
+  imageFolder?: string;
   youtubeId?: string;
 };
 
@@ -17,13 +20,34 @@ export const SITE = {
 
 export const HERO_IMAGE = "/images/hero.svg";
 
-const albums: PhotoWork[] = albumsData as PhotoWork[];
+type AlbumData = Omit<PhotoWork, "images"> & {
+  images?: string[];
+  imageFolder?: string;
+};
+
+const albums = albumsData as AlbumData[];
+const IMAGE_EXTENSIONS = new Set([".jpg", ".jpeg", ".png", ".webp", ".gif", ".svg"]);
+
+function imagesInFolder(folder: string, cover: string): string[] {
+  const publicFolder = path.join(process.cwd(), "public", folder.replace(/^\/+/, ""));
+  if (!fs.existsSync(publicFolder)) return [];
+  const images = fs
+    .readdirSync(publicFolder, { withFileTypes: true })
+    .filter((entry) => entry.isFile() && IMAGE_EXTENSIONS.has(path.extname(entry.name).toLowerCase()))
+    .map((entry) => `${folder.replace(/\/$/, "")}/${entry.name}`)
+    .sort((a, b) => a.localeCompare(b, undefined, { numeric: true }));
+
+  // Keep the configured cover as the slideshow opener, then show the rest
+  // of the folder in filename order.
+  return [cover, ...images.filter((image) => image !== cover)];
+}
 
 export function getAlbums(): PhotoWork[] {
   return albums.map((album) => ({
     ...album,
-    // The cover is always the first image of the slideshow.
-    images: album.images.length > 0 ? album.images : [album.cover],
+    images: album.imageFolder
+      ? imagesInFolder(album.imageFolder, album.cover)
+      : album.images ?? [],
   }));
 }
 
