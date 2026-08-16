@@ -38,5 +38,15 @@
     "cover": "/images/grad-pic/000038.JPG",
     "youtubeId": "haCpjUXIhrI",
     "imageFolder": "/images/grad-pic"
+  },
+  {
+    "slug": "ojt",
+    "title": "ojt",
+    "year": "2022",
+    "description": "samgyup sa bgc",
+    "roll": "Kodak Gold 200",
+    "cover": "/images/ojt/000014.JPG",
+    "youtubeId": "yGHEis32s2Y",
+    "imageFolder": "/images/ojt"
   }
 ]
