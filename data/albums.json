@@ -48,5 +48,15 @@
     "cover": "/images/ojt/000014.JPG",
     "youtubeId": "yGHEis32s2Y",
     "imageFolder": "/images/ojt"
+  },
+  {
+    "slug": "school-activity",
+    "title": "school activity",
+    "year": "2021",
+    "description": "may activity kami nito sa school kung saan nagpunta kami ng gubat",
+    "roll": "Kodak Gold 200",
+    "cover": "/images/school-activity/55750033.JPG",
+    "youtubeId": "vz3Yx-6cNvs",
+    "imageFolder": "/images/school-activity"
   }
 ]
