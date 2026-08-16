@@ -7,9 +7,7 @@
     "roll": "Kodak Ultramax 400",
     "cover": "/images/marinduque/000047100035.jpg",
     "youtubeId": "1ric3yCCe6c",
-    "images": [
-      "/images/marinduque"
-    ]
+    "imageFolder": "/images/marinduque"
   },
   {
     "slug": "baguio",
@@ -19,9 +17,7 @@
     "roll": "Kodak Ultramax 400",
     "cover": "/images/baguio/000009110011.jpg",
     "youtubeId": "VIDEO_ID_HERE",
-    "images": [
-      "/images/baguio/000009110011.jpg"
-    ]
+    "imageFolder": "/images/baguio"
   },
   {
     "slug": "on-the-sunny-side",
@@ -30,11 +26,7 @@
     "description": "Golden hour 35mm work.",
     "cover": "/images/on-the-sunny-side/cover.svg",
     "youtubeId": "VIDEO_ID_HERE",
-    "images": [
-      "/images/on-the-sunny-side/cover.svg",
-      "/images/on-the-sunny-side/IMG_2.svg",
-      "/images/on-the-sunny-side/IMG_3.svg"
-    ]
+    "imageFolder": "/images/on-the-sunny-side"
   },
   {
     "slug": "monochrome",
@@ -43,10 +35,6 @@
     "description": "Black and white 120 film studies.",
     "cover": "/images/monochrome/cover.svg",
     "youtubeId": "VIDEO_ID_HERE",
-    "images": [
-      "/images/monochrome/cover.svg",
-      "/images/monochrome/IMG_2.svg",
-      "/images/monochrome/IMG_3.svg"
-    ]
+    "imageFolder": "/images/monochrome"
   }
 ]

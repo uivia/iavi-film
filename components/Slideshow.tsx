@@ -2,10 +2,10 @@
 
 import { useState, useCallback, useEffect, useRef } from "react";
 import Link from "next/link";
-import { getAlbum } from "@/lib/albums";
+import type { PhotoWork } from "@/lib/albums";
 
 type Props = {
-  slug: string;
+  album: PhotoWork;
 };
 
 declare global {
@@ -37,23 +37,11 @@ function loadYouTubeApi(): Promise<void> {
   return apiReadyPromise;
 }
 
-export default function Slideshow({ slug }: Props) {
-  const album = getAlbum(slug);
-
-  if (!album) {
-    return (
-      <div className="flex min-h-screen items-center justify-center px-6 text-center">
-        <p className="text-sm uppercase tracking-[0.2em] text-neutral-500">
-          Album not found.
-        </p>
-      </div>
-    );
-  }
-
+export default function Slideshow({ album }: Props) {
   return <SlideshowInner album={album} />;
 }
 
-function SlideshowInner({ album }: { album: NonNullable<ReturnType<typeof getAlbum>> }) {
+function SlideshowInner({ album }: { album: PhotoWork }) {
   const [index, setIndex] = useState(0);
   const total = album.images.length;
 
