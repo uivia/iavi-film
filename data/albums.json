@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "marinduque",
+    "title": "marinduque",
+    "year": "2026",
+    "description": "time slows down, no rush, no noise, just the island breathing at its own pace",
+    "roll": "Kodak Ultramax 400",
+    "cover": "/images/marinduque/000047100035.jpg",
+    "youtubeId": "1ric3yCCe6c",
+    "images": [
+      "/images/marinduque/000047100010.jpg",
+      "/images/marinduque/000047100019.jpg",
+      "/images/marinduque/000047100021.jpg",
+      "/images/marinduque/000047100022.jpg",
+      "/images/marinduque/000047100025.jpg",
+      "/images/marinduque/000047100026.jpg",
+      "/images/marinduque/000047100027.jpg",
+      "/images/marinduque/000047100028.jpg",
+      "/images/marinduque/000047100029.jpg",
+      "/images/marinduque/000047100030.jpg",
+      "/images/marinduque/000047100035.jpg",
+      "/images/marinduque/000047100036.jpg",
+      "/images/marinduque/000047100037.jpg",
+      "/images/marinduque/000047100038.jpg"
+    ]
+  },
+  {
+    "slug": "the-morro",
+    "title": "The Morro",
+    "year": "2023",
+    "description": "A quiet coastline, shot on Kodak Portra.",
+    "roll": "Kodak Ultramax 400",
+    "cover": "/images/the-morro/cover.svg",
+    "youtubeId": "VIDEO_ID_HERE",
+    "images": [
+      "/images/the-morro/cover.svg",
+      "/images/the-morro/IMG_2.svg",
+      "/images/the-morro/IMG_3.svg"
+    ]
+  },
+  {
+    "slug": "on-the-sunny-side",
+    "title": "\"On the Sunny Side of the Street\"",
+    "year": "2024",
+    "description": "Golden hour 35mm work.",
+    "cover": "/images/on-the-sunny-side/cover.svg",
+    "youtubeId": "VIDEO_ID_HERE",
+    "images": [
+      "/images/on-the-sunny-side/cover.svg",
+      "/images/on-the-sunny-side/IMG_2.svg",
+      "/images/on-the-sunny-side/IMG_3.svg"
+    ]
+  },
+  {
+    "slug": "monochrome",
+    "title": "Monochrome",
+    "year": "2025",
+    "description": "Black and white 120 film studies.",
+    "cover": "/images/monochrome/cover.svg",
+    "youtubeId": "VIDEO_ID_HERE",
+    "images": [
+      "/images/monochrome/cover.svg",
+      "/images/monochrome/IMG_2.svg",
+      "/images/monochrome/IMG_3.svg"
+    ]
+  }
+]
