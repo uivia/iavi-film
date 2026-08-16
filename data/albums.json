@@ -30,12 +30,12 @@
     "imageFolder": "/images/mariglem"
   },
   {
-    "slug": "monochrome",
-    "title": "Monochrome",
-    "year": "2025",
-    "description": "Black and white 120 film studies.",
-    "cover": "/images/monochrome/cover.svg",
-    "youtubeId": "VIDEO_ID_HERE",
-    "imageFolder": "/images/monochrome"
+    "slug": "grad-pic",
+    "title": "grad pic",
+    "year": "2023",
+    "description": "block mates",
+    "cover": "/images/grad-pic/000038.JPG",
+    "youtubeId": "haCpjUXIhrI",
+    "imageFolder": "/images/grad-pic"
   }
 ]
