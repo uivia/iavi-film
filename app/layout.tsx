@@ -6,10 +6,10 @@ import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: {
-    default: `${SITE.name} — Analog Film`,
+    default: `${SITE.name}`,
     template: `%s — ${SITE.name}`,
   },
-  description: `${SITE.name} — analog film photography.`,
+  description: `${SITE.name} — analog film.`,
 };
 
 const links = [
