@@ -12,19 +12,13 @@ export default function AboutPage() {
           About
         </h1>
         <p className="text-2xl font-light leading-relaxed sm:text-3xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla
-          facilisi. Sed sit amet dolor ac libero vehicula interdum. Vestibulum
-          ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
-          curae; Proin vitae urna at ligula tincidunt tincidunt.
+          Hoy bakla anong cnasabe mo tongkol sakin. ha Bakla ayosin mo lng
         </p>
         <p className="mt-8 text-base leading-relaxed text-neutral-600">
-          Curabitur non eros vitae nisi faucibus placerat. Phasellus egestas
-          turpis non magna condimentum, sed convallis nunc efficitur. Donec a
-          lectus eget velit condimentum. Aliquam erat volutpat. Sed euismod
-          justo a sem hendrerit, at porta justo dictum.{" "}
+          Hello ma’am,,menu PO natin for today,,. Binagoungan baboy na may talong. Sinigang na bangus dagupan. .adobong manok. Letchon paksiw Mebudo .igabo. At dinuguan. May monggo PO na may talbos NG amplaya,,{" "}
         </p>
         <p className="mt-8 text-sm uppercase tracking-[0.2em] text-neutral-500">
-          Portland, OR
+          Laguna
         </p>
       </div>
     </div>
