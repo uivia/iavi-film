@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { getAlbums } from "@/lib/albums";
 
@@ -21,11 +22,14 @@ export default function WorkPage() {
           >
             <div className="overflow-hidden bg-neutral-100">
               {/* Use a fixed aspect box so the grid stays even without real photos */}
-              <div className="aspect-[6/4]">
-                <img
+              <div className="relative aspect-[6/4]">
+                <Image
                   src={album.cover}
                   alt={album.title}
-                  className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  fill
+                  sizes="(max-width: 640px) calc(100vw - 3rem), (max-width: 1024px) calc(50vw - 3rem), 352px"
+                  quality={80}
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
             </div>
