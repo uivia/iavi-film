@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useEffect, useRef } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import type { PhotoWork } from "@/lib/albums";
 
@@ -43,7 +44,14 @@ export default function Slideshow({ album }: Props) {
 
 function SlideshowInner({ album }: { album: PhotoWork }) {
   const [index, setIndex] = useState(0);
+  const [loadedImages, setLoadedImages] = useState<Set<string>>(
+    () => new Set()
+  );
   const total = album.images.length;
+
+  const visibleIndexes = Array.from(
+    new Set([(index - 1 + total) % total, index, (index + 1) % total])
+  );
 
   const go = useCallback(
     (dir: number) => {
@@ -126,12 +134,47 @@ function SlideshowInner({ album }: { album: PhotoWork }) {
       </div>
 
       <div className="relative flex flex-1 items-center justify-center px-6 py-10">
-        <img
-          key={album.images[index]}
-          src={album.images[index]}
-          alt={`${album.title} — ${index + 1}`}
-          className="fade-in max-h-[72vh] max-w-full object-contain"
-        />
+        <div
+          className="relative h-[72vh] w-full max-w-6xl"
+          aria-live="polite"
+        >
+          {!loadedImages.has(album.images[index]) && (
+            <div
+              className="absolute inset-0 animate-pulse bg-neutral-100"
+              aria-hidden="true"
+            />
+          )}
+
+          {visibleIndexes.map((slideIndex) => {
+            const src = album.images[slideIndex];
+            const isCurrent = slideIndex === index;
+            const isLoaded = loadedImages.has(src);
+
+            return (
+              <Image
+                key={src}
+                src={src}
+                alt={isCurrent ? `${album.title} — ${slideIndex + 1}` : ""}
+                fill
+                sizes="(max-width: 768px) calc(100vw - 3rem), 1152px"
+                quality={80}
+                priority={index === 0 && slideIndex === 0}
+                loading={index === 0 && slideIndex === 0 ? undefined : "eager"}
+                onLoad={() =>
+                  setLoadedImages((loaded) => {
+                    if (loaded.has(src)) return loaded;
+                    const next = new Set(loaded);
+                    next.add(src);
+                    return next;
+                  })
+                }
+                className={`object-contain transition-opacity duration-300 ${
+                  isCurrent && isLoaded ? "opacity-100" : "opacity-0"
+                }`}
+              />
+            );
+          })}
+        </div>
 
         <button
           onClick={() => go(-1)}
