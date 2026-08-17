@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from '@vercel/analytics/next';
 import Link from "next/link";
 import "@/app/globals.css";
 import { SITE } from "@/lib/albums";
@@ -37,6 +38,7 @@ export default function RootLayout({
         </header>
         <main className="flex-1">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
